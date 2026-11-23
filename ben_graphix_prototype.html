@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="BEN GRAPHIX — custom posters, flyers and promotional designs.">
+<title>BEN GRAPHIX | Your Vision. Our Design.</title>
+<style>
+:root{--bg:#07111f;--panel:#101f32;--panel2:#142840;--ink:#f4f8ff;--muted:#a9b9ce;--blue:#42a5ff;--cyan:#6ee7f9;--line:#29415d;--gold:#ffd166}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 80% 0%,#12365a 0,transparent 38%),var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+a{color:inherit}.wrap{width:min(1120px,92%);margin:auto}.top{position:sticky;top:0;z-index:5;background:#07111feF;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}.brand{font-weight:900;letter-spacing:1.5px;font-size:1.2rem}.brand span{color:var(--cyan)}.links{display:flex;gap:18px;flex-wrap:wrap}.links a{text-decoration:none;color:var(--muted);font-size:.92rem}.links a:hover{color:white}
+.btn{border:0;border-radius:12px;padding:12px 17px;background:linear-gradient(120deg,var(--blue),var(--cyan));color:#04111f;font-weight:800;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn.secondary{background:transparent;color:var(--ink);border:1px solid var(--line)}.btn.small{padding:8px 11px;font-size:.88rem}
+.hero{padding:72px 0 54px;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center}.eyebrow{color:var(--cyan);font-weight:800;text-transform:uppercase;letter-spacing:2px;font-size:.78rem}.hero h1{font-size:clamp(2.6rem,7vw,5rem);line-height:1.02;margin:12px 0 18px;letter-spacing:-2px}.hero h1 span{color:var(--cyan)}.hero p{color:var(--muted);max-width:570px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-art{min-height:330px;border:1px solid var(--line);border-radius:28px;padding:20px;background:linear-gradient(145deg,#102b49,#091523);display:grid;grid-template-columns:1fr 1fr;gap:13px;transform:rotate(1deg)}
+.poster{min-height:145px;border-radius:15px;padding:17px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;box-shadow:0 15px 30px #0005}.poster:after{content:"";position:absolute;width:130px;height:130px;border:22px solid #ffffff30;border-radius:50%;right:-35px;top:25px}.poster strong{font-size:1.35rem;line-height:1.05;z-index:1}.poster small{z-index:1;letter-spacing:1.5px}.p1{background:linear-gradient(135deg,#ff5e7e,#713baf)}.p2{background:linear-gradient(135deg,#f7b733,#fc4a1a);color:#231006}.p3{background:linear-gradient(135deg,#00b4db,#0083b0)}.p4{background:linear-gradient(135deg,#232526,#414345)}
+section{padding:42px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:20px;margin-bottom:22px}.section-head h2{font-size:clamp(1.7rem,4vw,2.4rem);margin:5px 0}.muted{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:linear-gradient(150deg,var(--panel),#0b1929);border:1px solid var(--line);border-radius:18px;padding:15px}.sample-art{height:190px;border-radius:13px;padding:18px;display:flex;flex-direction:column;justify-content:space-between;color:white;overflow:hidden}.sample-art b{font-size:1.6rem;line-height:1.05;max-width:210px}.sample-art span{font-size:.7rem;letter-spacing:2px}.sample-art.birthday{background:linear-gradient(135deg,#ff758c,#ff7eb3)}.sample-art.church{background:linear-gradient(135deg,#283c86,#45a247)}.sample-art.business{background:linear-gradient(135deg,#141e30,#4776e6)}.sample-art.school{background:linear-gradient(135deg,#f7971e,#ffd200);color:#281800}.sample-art.wedding{background:linear-gradient(135deg,#c31432,#240b36)}.sample-art.event{background:linear-gradient(135deg,#11998e,#38ef7d);color:#06231b}
+.card h3{margin:12px 0 3px}.card p{margin:0;color:var(--muted);font-size:.92rem}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:22px}.two{display:grid;grid-template-columns:1fr 1fr;gap:20px}label{display:block;font-weight:700;margin:12px 0 6px;font-size:.92rem}input,select,textarea{width:100%;padding:12px 13px;border-radius:11px;border:1px solid var(--line);background:#081625;color:var(--ink);font:inherit}input[type=file]{padding:9px}textarea{min-height:105px;resize:vertical}.note{border:1px solid #806a2d;background:#332b16;color:#ffe5a3;border-radius:12px;padding:13px;font-size:.9rem}.success{border:1px solid #24694d;background:#102d24;color:#b8f5d7;border-radius:12px;padding:13px}.hidden{display:none!important}.order-list{display:grid;gap:12px}.order{background:#0a1929;border:1px solid var(--line);border-radius:13px;padding:14px}.order-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.tag{font-size:.75rem;padding:4px 9px;border-radius:20px;background:#213a55;color:#cce6ff}.tag.paid{background:#123d30;color:#a9f2ce}.footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}.admin-tools{display:flex;gap:10px;flex-wrap:wrap;margin:15px 0}
+@media(max-width:760px){.hero{grid-template-columns:1fr;padding-top:48px}.hero-art{min-height:280px}.grid{grid-template-columns:1fr 1fr}.two{grid-template-columns:1fr}.links{gap:10px}.links a{font-size:.82rem}}
+@media(max-width:480px){.grid{grid-template-columns:1fr}.brand{font-size:1rem}.links a:nth-child(2){display:none}.hero-art{min-height:240px}.poster{min-height:105px}.poster strong{font-size:1.05rem}}
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap"><nav>
+  <a class="brand" href="#home" style="text-decoration:none">BEN <span>GRAPHIX</span></a>
+  <div class="links"><a href="#samples">Samples</a><a href="#order">Order a poster</a><a href="#how">How it works</a><a href="#admin">Admin demo</a></div>
+</nav></div></header>
+<main>
+<div class="wrap">
+<section class="hero" id="home">
+ <div><div class="eyebrow">Creative design studio</div><h1>Your Vision.<br><span>Our Design.</span></h1>
+ <p>Custom posters, event flyers and promotional designs made to help your ideas stand out. Choose a style, tell us what you need, and request your design.</p>
+ <div class="actions"><a class="btn" href="#order">Request a poster ↗</a><a class="btn secondary" href="#samples">Explore samples</a></div>
+ </div>
+ <div class="hero-art" aria-label="Decorative poster examples">
+  <div class="poster p1"><small>MAKE IT SPECIAL</small><strong>BIRTHDAY<br>VIBES</strong><small>CELEBRATE BIG</small></div>
+  <div class="poster p2"><small>YOUR BIG DAY</small><strong>GRAND<br>OPENING</strong><small>YOU'RE INVITED</small></div>
+  <div class="poster p3"><small>GATHER • GROW</small><strong>YOUTH<br>CONFERENCE</strong><small>ALL ARE WELCOME</small></div>
+  <div class="poster p4"><small>BUILT TO STAND OUT</small><strong>YOUR BRAND<br>YOUR STORY</strong><small>BEN GRAPHIX</small></div>
+ </div>
+</section>
+
+<section id="samples">
+ <div class="section-head"><div><div class="eyebrow">Our work</div><h2>Poster inspiration</h2><div class="muted">A few sample styles to help you describe what you want.</div></div></div>
+ <div class="grid">
+  <article class="card"><div class="sample-art birthday"><span>CELEBRATE IN STYLE</span><b>HAPPY<br>BIRTHDAY</b><span>YOUR SPECIAL DAY</span></div><h3>Birthday posters</h3><p>Bright, fun designs for celebrations.</p></article>
+  <article class="card"><div class="sample-art church"><span>FAITH • HOPE • COMMUNITY</span><b>WORSHIP<br>GATHERING</b><span>YOU ARE WELCOME</span></div><h3>Church events</h3><p>Posters for services, meetings and conferences.</p></article>
+  <article class="card"><div class="sample-art business"><span>NOW OPEN</span><b>YOUR BUSINESS<br>GOES HERE</b><span>QUALITY • SERVICE • VALUE</span></div><h3>Business adverts</h3><p>Promote a shop, product or service.</p></article>
+  <article class="card"><div class="sample-art school"><span>LEARN • LEAD • ACHIEVE</span><b>SCHOOL<br>EVENT</b><span>DATE • VENUE • TIME</span></div><h3>School posters</h3><p>For clubs, school events and announcements.</p></article>
+  <article class="card"><div class="sample-art wedding"><span>TOGETHER WITH THEIR FAMILIES</span><b>YOU'RE<br>INVITED</b><span>A DAY TO REMEMBER</span></div><h3>Wedding invitations</h3><p>Elegant invitations and celebration designs.</p></article>
+  <article class="card"><div class="sample-art event"><span>DON'T MISS OUT</span><b>LIVE<br>EVENT</b><span>DETAILS COMING SOON</span></div><h3>Event flyers</h3><p>Promotional artwork for events and launches.</p></article>
+ </div>
+</section>
+
+<section id="how">
+ <div class="section-head"><div><div class="eyebrow">Simple process</div><h2>How ordering works</h2></div></div>
+ <div class="grid">
+  <div class="card"><span class="eyebrow">01</span><h3>Send your brief</h3><p>Choose a category and share your wording, colours, date and other details.</p></div>
+  <div class="card"><span class="eyebrow">02</span><h3>Design & review</h3><p>BEN GRAPHIX prepares your design and shares a preview for review.</p></div>
+  <div class="card"><span class="eyebrow">03</span><h3>Pay & download</h3><p>After full payment is verified, your final high-quality poster is released for download and an email notification is sent.</p></div>
+ </div>
+</section>
+
+<section id="order">
+ <div class="section-head"><div><div class="eyebrow">Start a project</div><h2>Request your poster</h2><div class="muted">Complete the form. We'll review your request and confirm the price.</div></div></div>
+ <div class="two">
+  <form class="panel" id="orderForm">
+   <label for="customer">Your name</label><input id="customer" required maxlength="80" placeholder="Full name">
+   <label for="email">Email address</label><input id="email" type="email" required maxlength="120" placeholder="you@example.com">
+   <label for="contact">Phone / WhatsApp (optional)</label><input id="contact" maxlength="40" placeholder="Your contact number">
+   <label for="category">Poster type</label><select id="category" required><option value="">Choose a category</option><option>Birthday</option><option>Church event</option><option>Business advertisement</option><option>School event</option><option>Wedding</option><option>Music / entertainment</option><option>Other</option></select>
+   <label for="size">Preferred format</label><select id="size"><option>Social media post</option><option>Instagram story / status</option><option>A4 poster</option><option>Other / please advise</option></select>
+   <label for="details">What should appear on the poster?</label><textarea id="details" required maxlength="1500" placeholder="Add the exact wording, date, venue, colours and style you want..."></textarea>
+   <label for="reference">Reference image (optional)</label><input id="reference" type="file" accept="image/*">
+   <p class="muted" style="font-size:.82rem">Prototype note: this demo form does not upload files to a server. Don't enter sensitive information.</p>
+   <button class="btn" type="submit">Submit poster request</button>
+   <div id="formMessage" class="success hidden" role="status" style="margin-top:12px"></div>
+  </form>
+  <aside class="panel"><div class="eyebrow">Before you order</div><h3>Make your idea clear</h3><p class="muted">Include the exact text, preferred colours, size, deadline and any logos or photos you want included.</p><div class="note"><b>Payment & delivery</b><br>Price and payment instructions should be confirmed with the designer. Final files are intended to unlock only after the payment provider verifies full payment.</div><h3 style="margin-top:24px">Need help?</h3><p class="muted">Add your official business email and WhatsApp contact here before publishing this website.</p></aside>
+ </div>
+</section>
+
+<section id="admin">
+ <div class="section-head"><div><div class="eyebrow">Studio workspace</div><h2>Admin area preview</h2><div class="muted">A visual prototype of the tools the studio owner will use.</div></div></div>
+ <div class="note" style="margin-bottom:15px"><b>Demo only — not secure admin access.</b> This page has no real login, server database, payment verification or email sending. Do not publish customer data or use this demo to accept payments. A secure backend must be added before launch.</div>
+ <div class="panel">
+  <div class="admin-tools"><button class="btn small" id="showOrders">View demo orders</button><button class="btn secondary small" id="showUpload">Test final-file upload</button></div>
+  <div id="adminOrders"><p class="muted">Demo orders submitted in this browser will appear here. Real orders need a secure database.</p><div id="ordersList" class="order-list"></div></div>
+  <div id="uploadArea" class="hidden">
+   <h3>Test final poster upload</h3>
+   <label for="demoOrder">Select a demo order</label><select id="demoOrder"></select>
+   <label for="finalFile">Choose final poster file</label><input id="finalFile" type="file" accept="image/*,.pdf">
+   <p class="muted" style="font-size:.82rem">This only demonstrates selecting a file in this browser. It does not securely store or deliver it.</p>
+   <button class="btn" id="attachFile" type="button">Attach to demo order</button><div id="uploadMessage" class="success hidden" style="margin-top:12px"></div>
+  </div>
+ </div>
+</section>
+</div>
+</main>
+<footer class="footer"><div class="wrap">© <span id="year"></span> BEN GRAPHIX · Your Vision. Our Design. <span style="float:right">Design with purpose.</span></div></footer>
+<script>
+const orders=[];
+const $=id=>document.getElementById(id);
+$("year").textContent=new Date().getFullYear();
+$("orderForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const order={id:"BG-"+Date.now().toString().slice(-7),name:$("customer").value,email:$("email").value,contact:$("contact").value,category:$("category").value,size:$("size").value,details:$("details").value,status:"Request received",fileName:"",payment:"Not verified"};
+ orders.unshift(order);renderOrders();$("formMessage").textContent="Thanks! Your demo request "+order.id+" has been added to this browser's admin preview. This prototype has not sent it to BEN GRAPHIX."; $("formMessage").classList.remove("hidden");e.target.reset();
+});
+function renderOrders(){
+ $("ordersList").innerHTML="";
+ $("demoOrder").innerHTML="";
+ if(!orders.length){$("ordersList").innerHTML='<p class="muted">No demo orders yet. Submit the request form above to see one here.</p>';return;}
+ orders.forEach((o,i)=>{
+  const el=document.createElement("div");el.className="order";
+  const title=document.createElement("div");title.className="order-top";
+  const strong=document.createElement("b");strong.textContent=o.id+" · "+o.category;
+  const tag=document.createElement("span");tag.className="tag";tag.textContent=o.status;
+  title.append(strong,tag);
+  const desc=document.createElement("p");desc.className="muted";desc.textContent=o.name+" · "+o.email+" · "+o.size;
+  const detail=document.createElement("p");detail.textContent=o.details;
+  const file=document.createElement("p");file.className="muted";file.textContent=o.fileName?"Selected file: "+o.fileName:"No final file attached";
+  el.append(title,desc,detail,file);$("ordersList").append(el);
+  const opt=document.createElement("option");opt.value=String(i);opt.textContent=o.id+" — "+o.name;$("demoOrder").append(opt);
+ });
+}
+$("showOrders").onclick=()=>{$("adminOrders").classList.remove("hidden");$("uploadArea").classList.add("hidden");};
+$("showUpload").onclick=()=>{$("uploadArea").classList.remove("hidden");$("adminOrders").classList.add("hidden");};
+$("attachFile").onclick=()=>{
+ const i=Number($("demoOrder").value),f=$("finalFile").files[0];
+ if(!orders[i]||!f){$("uploadMessage").textContent="Choose an order and a file first.";$("uploadMessage").classList.remove("hidden");return;}
+ orders[i].fileName=f.name;renderOrders();$("uploadMessage").textContent="File selected for this demo order. Real delivery must wait for verified full payment in the secure production system.";$("uploadMessage").classList.remove("hidden");
+};
+</script>
+</body>
+</html>
